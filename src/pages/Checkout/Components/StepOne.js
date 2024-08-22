@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
@@ -8,6 +8,37 @@ export const StepOne = ({
   setPersonalInfo,
   setLibraryCardInfo,
 }) => {
+  const [errors, setErrors] = useState({});
+
+  const handleValidation = (field, value) => {
+    let newErrors = { ...errors };
+
+    switch (field) {
+      case "name":
+      case "fullName":
+        newErrors[field] = value.trim() === "" ? "This field is required" : "";
+        break;
+      case "email":
+        newErrors[field] = value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)
+          ? ""
+          : "Please enter a valid email address";
+        break;
+      case "phonenumber":
+        newErrors[field] = value.match(/^\d{10}$/)
+          ? ""
+          : "Please enter a valid 10-digit phone number";
+        break;
+      case "cardNumber":
+        newErrors[field] =
+          value.trim() === "" ? "Library Card Number is required" : "";
+        break;
+      default:
+        break;
+    }
+
+    setErrors(newErrors);
+  };
+
   return (
     <>
       <div>
@@ -29,10 +60,28 @@ export const StepOne = ({
             label="Full Name"
             variant="outlined"
             value={personalInfo.name}
-            onChange={(e) =>
-              setPersonalInfo({ ...personalInfo, name: e.target.value })
-            }
+            onChange={(e) => {
+              const value = e.target.value;
+              setPersonalInfo({ ...personalInfo, name: value });
+              handleValidation("name", value);
+            }}
+            error={!!errors.name}
+            helperText={errors.name}
             sx={{
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "white",
+                },
+                "&:hover fieldset": {
+                  borderColor: "white",
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "white",
+                },
+              },
+              "& .MuiOutlinedInput-input": {
+                color: "#ffffff",
+              },
               "& > :not(style)": {
                 color: "#666",
               },
@@ -56,10 +105,28 @@ export const StepOne = ({
             label="Email Address"
             variant="outlined"
             value={personalInfo.email}
-            onChange={(e) =>
-              setPersonalInfo({ ...personalInfo, email: e.target.value })
-            }
+            onChange={(e) => {
+              const value = e.target.value;
+              setPersonalInfo({ ...personalInfo, email: value });
+              handleValidation("email", value);
+            }}
+            error={!!errors.email}
+            helperText={errors.email}
             sx={{
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "white",
+                },
+                "&:hover fieldset": {
+                  borderColor: "white",
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "white",
+                },
+              },
+              "& .MuiOutlinedInput-input": {
+                color: "#ffffff",
+              },
               "& > :not(style)": {
                 color: "#666",
               },
@@ -83,10 +150,28 @@ export const StepOne = ({
             label="Phone Number"
             variant="outlined"
             value={personalInfo.phonenumber}
-            onChange={(e) =>
-              setPersonalInfo({ ...personalInfo, phonenumber: e.target.value })
-            }
+            onChange={(e) => {
+              const value = e.target.value;
+              setPersonalInfo({ ...personalInfo, phonenumber: value });
+              handleValidation("phonenumber", value);
+            }}
+            error={!!errors.phonenumber}
+            helperText={errors.phonenumber}
             sx={{
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "white",
+                },
+                "&:hover fieldset": {
+                  borderColor: "white",
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "white",
+                },
+              },
+              "& .MuiOutlinedInput-input": {
+                color: "#ffffff",
+              },
               "& > :not(style)": {
                 color: "#666",
               },
@@ -113,13 +198,28 @@ export const StepOne = ({
             label="Library Card Name"
             variant="outlined"
             value={libraryCardInfo.fullName}
-            onChange={(e) =>
-              setLibraryCardInfo({
-                ...libraryCardInfo,
-                fullName: e.target.value,
-              })
-            }
+            onChange={(e) => {
+              const value = e.target.value;
+              setLibraryCardInfo({ ...libraryCardInfo, fullName: value });
+              handleValidation("fullName", value);
+            }}
+            error={!!errors.fullName}
+            helperText={errors.fullName}
             sx={{
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "white",
+                },
+                "&:hover fieldset": {
+                  borderColor: "white",
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "white",
+                },
+              },
+              "& .MuiOutlinedInput-input": {
+                color: "#ffffff",
+              },
               "& > :not(style)": {
                 color: "#666",
               },
@@ -143,13 +243,28 @@ export const StepOne = ({
             label="Library Card Number"
             variant="outlined"
             value={libraryCardInfo.cardNumber}
-            onChange={(e) =>
-              setLibraryCardInfo({
-                ...libraryCardInfo,
-                cardNumber: e.target.value,
-              })
-            }
+            onChange={(e) => {
+              const value = e.target.value;
+              setLibraryCardInfo({ ...libraryCardInfo, cardNumber: value });
+              handleValidation("cardNumber", value);
+            }}
+            error={!!errors.cardNumber}
+            helperText={errors.cardNumber}
             sx={{
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "white",
+                },
+                "&:hover fieldset": {
+                  borderColor: "white",
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "white",
+                },
+              },
+              "& .MuiOutlinedInput-input": {
+                color: "#ffffff",
+              },
               "& > :not(style)": {
                 color: "#666",
               },
