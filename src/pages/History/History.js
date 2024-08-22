@@ -152,7 +152,7 @@ export const History = () => {
           <div className="no-history">
             <p>Looks like you haven't borrowed any books.</p>
             <p>Why not find something interesting today? 🕵️‍♂️📚</p>
-            <Link to="/">
+            <Link to="/Epic-Reads">
               <button>Start Borrowing</button>
             </Link>
           </div>

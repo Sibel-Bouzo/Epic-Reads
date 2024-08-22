@@ -55,7 +55,7 @@ export const Cart = () => {
         <div className="no-history">
           <p>Looks like you haven't borrowed any books.</p>
           <p>Why not find something interesting today? 🕵️‍♂️📚</p>
-          <Link to="/">
+          <Link to="/Epic-Reads">
             <button>Explore Books</button>
           </Link>
         </div>
