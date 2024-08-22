@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.ico" />
+
+    <meta name="title" content="Epic Reads" />
+    <meta
+      name="description"
+      content="Explore a wide selection of books across genres at Epic Reads. Whether you're looking for fiction, non-fiction, or children's books, we have something for everyone."
+    />
+    <meta
+      name="keywords"
+      content="books, bookshop, online bookstore, buy books, literature, novels, non-fiction, bestsellers"
+    />
+    <meta name="author" content="Sibel Bouzo" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="logo.png" />
+
+    <link href="../src/index.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+
+    <title>Epic Reads</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
