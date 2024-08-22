@@ -66,27 +66,65 @@ export const History = () => {
               InputLabelProps={{ shrink: true }}
               value={filterDate}
               onChange={(e) => setFilterDate(e.target.value)}
-              sx={{ marginBottom: 2 }}
+              sx={{
+                marginBottom: 2,
+                "& .MuiInputLabel-root": {
+                  color: "white",
+                },
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "white",
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "white",
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "white",
+                  },
+                },
+                "& .MuiOutlinedInput-input": {
+                  color: "white",
+                },
+                "& > :not(style)": {
+                  color: "white",
+                },
+              }}
             />
-            <TableContainer component={Paper}>
+            <TableContainer
+              component={Paper}
+              sx={{ backgroundColor: "transparent", border: "1px solid white" }}
+            >
               <Table>
                 <TableHead>
                   <TableRow>
-                    <TableCell>Date</TableCell>
-                    <TableCell>Total Books</TableCell>
-                    <TableCell>Action</TableCell>
+                    <TableCell sx={{ color: "white" }}>Date</TableCell>
+                    <TableCell sx={{ color: "white" }}>Total Books</TableCell>
+                    <TableCell sx={{ color: "white" }}>Action</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {filteredHistory.length > 0 ? (
                     filteredHistory.map((record, recordIndex) => (
                       <TableRow key={recordIndex}>
-                        <TableCell>{record.date}</TableCell>
-                        <TableCell>{record.books.length}</TableCell>
+                        <TableCell sx={{ color: "white" }}>
+                          {record.date}
+                        </TableCell>
+                        <TableCell sx={{ color: "white" }}>
+                          {record.books.length}
+                        </TableCell>
                         <TableCell>
                           <Button
                             variant="contained"
                             onClick={() => handleOpen(record)}
+                            sx={{
+                              border: "1px solid #d4a373 !important",
+                              background:
+                                "linear-gradient(to right, #ff6f61, #d4a373, #6b4226) !important",
+                              WebkitBackgroundClip: "text !important",
+                              WebkitTextFillColor: "transparent !important",
+                              backgroundClip: "text !important",
+                              textFillColor: "transparent !important",
+                            }}
                           >
                             View Books
                           </Button>
@@ -104,8 +142,17 @@ export const History = () => {
               </Table>
             </TableContainer>
 
-            <Dialog open={open} onClose={handleClose}>
-              <DialogTitle>Borrowed Books</DialogTitle>
+            <Dialog
+              open={open}
+              onClose={handleClose}
+              sx={{
+                "& .MuiPaper-root": {
+                  backgroundColor: "#0f0f10", // Your desired color
+                  color: "white", // Optional: text color
+                },
+              }}
+            >
+              <DialogTitle sx={{ color: "white" }}>Borrowed Books</DialogTitle>
               <DialogContent>
                 {selectedBorrowing && (
                   <ul>
@@ -116,7 +163,6 @@ export const History = () => {
                           <strong>{book.title}</strong> by {book.author} - Due
                           Date: {book.returnDate}
                           <br />
-                          {/* Debugging: Log book status */}
                           <span>Status: {book.status}</span>
                           {isOverdue && book.status === "Not Returned" && (
                             <Button
@@ -140,7 +186,18 @@ export const History = () => {
                 )}
               </DialogContent>
               <DialogActions>
-                <Button onClick={handleClose} color="primary">
+                <Button
+                  onClick={handleClose}
+                  color="primary"
+                  sx={{
+                    background:
+                      "linear-gradient(to right, #ff6f61, #d4a373, #6b4226) !important",
+                    WebkitBackgroundClip: "text !important",
+                    WebkitTextFillColor: "transparent !important",
+                    backgroundClip: "text !important",
+                    textFillColor: "transparent !important",
+                  }}
+                >
                   Close
                 </Button>
               </DialogActions>

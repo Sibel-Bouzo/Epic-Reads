@@ -248,9 +248,7 @@ strong {
   background-color: #2d3032;
   border: 2px solid #2d3032;
 }
-/* .cart-checkout .css-i4bv87-MuiSvgIcon-root {
-  border: 1px solid white;
-} */
+
 .cart-checkout .back {
   background-color: transparent;
   border: 2px solid #d4a373;
@@ -280,30 +278,6 @@ strong {
   font-size: 18px;
 }
 
-/* .css-xn6ruc > :not(style) {
-  width: 50% !important;
-  margin: 0 0 15px !important;
-}
-.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
-  .MuiOutlinedInput-notchedOutline {
-  border-color: white !important;
-}
-.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
-  color: #666 !important;
-}
-.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-  color: white !important;
-}
-.css-xn6ruc > :not(style) {
-  border-bottom: 1px solid white;
-  border-radius: 2px !important;
-}
-.css-xn6ruc > :not(style):last-child {
-  margin-bottom: 20px !important;
-}
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-  color: white !important;
-} */
 .step-two-checkout p {
   margin-bottom: 10px;
   padding-bottom: 10px;
@@ -328,30 +302,6 @@ strong {
 .history,
 .cart {
   position: relative;
-}
-.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
-  color: white !important;
-}
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-  border-color: white !important;
-}
-.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
-  background-color: transparent !important;
-  border: 1px solid white;
-}
-.css-1ygcj2i-MuiTableCell-root {
-  color: white !important;
-}
-.css-1ex1afd-MuiTableCell-root {
-  color: white !important;
-}
-.css-sghohy-MuiButtonBase-root-MuiButton-root {
-  border: 1px solid #d4a373 !important;
-  background: linear-gradient(to right, #ff6f61, #d4a373, #6b4226) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-  text-fill-color: transparent !important;
 }
 
 .history .no-history,
@@ -413,17 +363,6 @@ strong {
   left: 0;
   animation: shine 200ms linear;
   transform: translateX(250px) rotate(-25deg);
-}
-.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
-  background-color: #0f0f10 !important;
-  color: white !important;
-}
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
-  background: linear-gradient(to right, #ff6f61, #d4a373, #6b4226) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-  text-fill-color: transparent !important;
 }
 
 .faqs div {
