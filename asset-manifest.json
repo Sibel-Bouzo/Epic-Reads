@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Epic-Reads/static/css/main.ad11c747.css",
-    "main.js": "/Epic-Reads/static/js/main.8804176e.js",
+    "main.js": "/Epic-Reads/static/js/main.165562dc.js",
     "index.html": "/Epic-Reads/index.html",
     "main.ad11c747.css.map": "/Epic-Reads/static/css/main.ad11c747.css.map",
-    "main.8804176e.js.map": "/Epic-Reads/static/js/main.8804176e.js.map"
+    "main.165562dc.js.map": "/Epic-Reads/static/js/main.165562dc.js.map"
   },
   "entrypoints": [
     "static/css/main.ad11c747.css",
-    "static/js/main.8804176e.js"
+    "static/js/main.165562dc.js"
   ]
 }
