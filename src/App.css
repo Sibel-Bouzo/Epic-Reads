@@ -248,9 +248,9 @@ strong {
   background-color: #2d3032;
   border: 2px solid #2d3032;
 }
-.cart-checkout .css-i4bv87-MuiSvgIcon-root {
+/* .cart-checkout .css-i4bv87-MuiSvgIcon-root {
   border: 1px solid white;
-}
+} */
 .cart-checkout .back {
   background-color: transparent;
   border: 2px solid #d4a373;
@@ -280,7 +280,7 @@ strong {
   font-size: 18px;
 }
 
-.css-xn6ruc > :not(style) {
+/* .css-xn6ruc > :not(style) {
   width: 50% !important;
   margin: 0 0 15px !important;
 }
@@ -303,7 +303,7 @@ strong {
 }
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
   color: white !important;
-}
+} */
 .step-two-checkout p {
   margin-bottom: 10px;
   padding-bottom: 10px;

@@ -42,7 +42,13 @@ export const Cart = () => {
             <FormControlLabel
               required
               control={
-                <Checkbox checked={isChecked} onChange={handleCheckboxChange} />
+                <Checkbox
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                  sx={{
+                    color: "white",
+                  }}
+                />
               }
               label="To proceed, please confirm your agreement to our Terms and Privacy Policy."
             />

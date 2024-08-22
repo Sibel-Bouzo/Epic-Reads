@@ -48,7 +48,13 @@ export const StepTwo = ({
         <FormControlLabel
           required
           control={
-            <Checkbox checked={isChecked} onChange={handleCheckboxChange} />
+            <Checkbox
+              checked={isChecked}
+              onChange={handleCheckboxChange}
+              sx={{
+                color: "white",
+              }}
+            />
           }
           label="By checking this box, I agree to return the book by the selected due date."
         />

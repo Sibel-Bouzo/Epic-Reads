@@ -15,7 +15,11 @@ export const StepOne = ({
         <Box
           component="form"
           sx={{
-            "& > :not(style)": { m: 1, width: "25ch" },
+            "& > :not(style)": {
+              marginBottom: "20px",
+              width: "50%",
+              color: "white",
+            },
           }}
           noValidate
           autoComplete="off"
@@ -28,12 +32,21 @@ export const StepOne = ({
             onChange={(e) =>
               setPersonalInfo({ ...personalInfo, name: e.target.value })
             }
+            sx={{
+              "& > :not(style)": {
+                color: "#666",
+              },
+            }}
           />
         </Box>
         <Box
           component="form"
           sx={{
-            "& > :not(style)": { m: 1, width: "25ch" },
+            "& > :not(style)": {
+              marginBottom: "20px",
+              width: "50%",
+              color: "white",
+            },
           }}
           noValidate
           autoComplete="off"
@@ -46,12 +59,21 @@ export const StepOne = ({
             onChange={(e) =>
               setPersonalInfo({ ...personalInfo, email: e.target.value })
             }
+            sx={{
+              "& > :not(style)": {
+                color: "#666",
+              },
+            }}
           />
         </Box>
         <Box
           component="form"
           sx={{
-            "& > :not(style)": { m: 1, width: "25ch" },
+            "& > :not(style)": {
+              marginBottom: "20px",
+              width: "50%",
+              color: "white",
+            },
           }}
           noValidate
           autoComplete="off"
@@ -64,6 +86,11 @@ export const StepOne = ({
             onChange={(e) =>
               setPersonalInfo({ ...personalInfo, phonenumber: e.target.value })
             }
+            sx={{
+              "& > :not(style)": {
+                color: "#666",
+              },
+            }}
           />
         </Box>
       </div>
@@ -72,7 +99,11 @@ export const StepOne = ({
         <Box
           component="form"
           sx={{
-            "& > :not(style)": { m: 1, width: "25ch" },
+            "& > :not(style)": {
+              marginBottom: "20px",
+              width: "50%",
+              color: "white",
+            },
           }}
           noValidate
           autoComplete="off"
@@ -88,12 +119,21 @@ export const StepOne = ({
                 fullName: e.target.value,
               })
             }
+            sx={{
+              "& > :not(style)": {
+                color: "#666",
+              },
+            }}
           />
         </Box>
         <Box
           component="form"
           sx={{
-            "& > :not(style)": { m: 1, width: "25ch" },
+            "& > :not(style)": {
+              marginBottom: "20px",
+              width: "50%",
+              color: "white",
+            },
           }}
           noValidate
           autoComplete="off"
@@ -109,6 +149,11 @@ export const StepOne = ({
                 cardNumber: e.target.value,
               })
             }
+            sx={{
+              "& > :not(style)": {
+                color: "#666",
+              },
+            }}
           />
         </Box>
       </div>

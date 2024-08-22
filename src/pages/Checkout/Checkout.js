@@ -39,7 +39,7 @@ export const Checkout = () => {
       toast("Checkout complete! ✅");
       clearAll();
       setCurrentStep(1);
-      navigate("/");
+      navigate("/Epic-Reads");
     }
   };
 
