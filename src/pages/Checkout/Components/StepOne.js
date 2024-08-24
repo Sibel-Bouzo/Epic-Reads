@@ -85,6 +85,12 @@ export const StepOne = ({
               "& > :not(style)": {
                 color: "#666",
               },
+              "& .MuiInputLabel-root": {
+                color: "#666",
+                "&.Mui-focused": {
+                  color: "white",
+                },
+              },
             }}
           />
         </Box>
@@ -130,6 +136,12 @@ export const StepOne = ({
               "& > :not(style)": {
                 color: "#666",
               },
+              "& .MuiInputLabel-root": {
+                color: "#666",
+                "&.Mui-focused": {
+                  color: "white",
+                },
+              },
             }}
           />
         </Box>
@@ -174,6 +186,12 @@ export const StepOne = ({
               },
               "& > :not(style)": {
                 color: "#666",
+              },
+              "& .MuiInputLabel-root": {
+                color: "#666",
+                "&.Mui-focused": {
+                  color: "white",
+                },
               },
             }}
           />
@@ -223,6 +241,12 @@ export const StepOne = ({
               "& > :not(style)": {
                 color: "#666",
               },
+              "& .MuiInputLabel-root": {
+                color: "#666",
+                "&.Mui-focused": {
+                  color: "white",
+                },
+              },
             }}
           />
         </Box>
@@ -267,6 +291,12 @@ export const StepOne = ({
               },
               "& > :not(style)": {
                 color: "#666",
+              },
+              "& .MuiInputLabel-root": {
+                color: "#666",
+                "&.Mui-focused": {
+                  color: "white",
+                },
               },
             }}
           />

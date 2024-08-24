@@ -26,7 +26,9 @@ export const Cart = () => {
                 : ""}
             </h2>
             {cart.length > 0 ? (
-              <button onClick={clearAll}>Clear All</button>
+              <button onClick={clearAll} className="clear-cart">
+                Clear All
+              </button>
             ) : (
               ""
             )}

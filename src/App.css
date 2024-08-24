@@ -1,5 +1,6 @@
 :root {
   --primary-color: #1a91f0;
+  --main-color: #d4a373;
   --transition-duration: 0.3s;
 }
 html {
@@ -153,6 +154,13 @@ strong {
   font-size: 28px;
   margin-bottom: 15px;
 }
+.cart .clear-cart {
+  color: var(--main-color);
+  transition: var(--transition-duration);
+}
+.cart .clear-cart:hover {
+  color: #b36f41;
+}
 .cart .cart-item .cart-item-info {
   gap: 15px;
   display: flex;
@@ -201,7 +209,7 @@ strong {
 
 .styled-select:hover,
 .styled-select:focus {
-  border-color: #d4a373;
+  border-color: var(--main-color);
 }
 
 .styled-select option {
@@ -234,7 +242,7 @@ strong {
   border-radius: 5px;
   color: white;
   font-weight: 500;
-  border: 2px solid #d4a373;
+  border: 2px solid var(--main-color);
   background: linear-gradient(to right, #ff6f61, #d4a373, #6b4226);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -251,7 +259,7 @@ strong {
 
 .cart-checkout .back {
   background-color: transparent;
-  border: 2px solid #d4a373;
+  border: 2px solid var(--main-color);
   background: linear-gradient(to right, #ff6f61, #d4a373, #6b4226);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -335,8 +343,7 @@ strong {
   cursor: pointer;
   color: white;
   padding: 10px 20px;
-  border: 2px solid #d4a373;
-
+  border: 2px solid var(--main-color);
   position: relative;
   overflow: hidden;
   transition: all 200ms linear;
