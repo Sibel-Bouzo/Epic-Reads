@@ -70,6 +70,9 @@ export const History = () => {
                 marginBottom: 2,
                 "& .MuiInputLabel-root": {
                   color: "white",
+                  "&.Mui-focused": {
+                    color: "white",
+                  },
                 },
                 "& .MuiOutlinedInput-root": {
                   "& fieldset": {
@@ -133,7 +136,12 @@ export const History = () => {
                     ))
                   ) : (
                     <TableRow>
-                      <TableCell colSpan={3}>
+                      <TableCell
+                        colSpan={3}
+                        sx={{
+                          color: "white",
+                        }}
+                      >
                         No borrowing history found.
                       </TableCell>
                     </TableRow>
