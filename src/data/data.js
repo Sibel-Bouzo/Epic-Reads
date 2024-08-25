@@ -19,14 +19,14 @@ export const navElements = [
 
 export const books = [
   {
-    image: "/images/Little-Fires-Everywhere.jpg",
+    image: "images/Little-Fires-Everywhere.jpg",
     title: "Little Fires Everywhere",
     author: "Celeste Ng",
     description:
       "In a quiet suburban community, the arrival of a free-spirited artist and her daughter disrupts the lives of a seemingly perfect family. Secrets and tensions ignite, revealing the hidden complexities beneath the surface.",
   },
   {
-    image: "/images/The Push.jpg",
+    image: "images/The Push.jpg",
     title: "The Push",
     author: "Ashley Audrain",
     description:
