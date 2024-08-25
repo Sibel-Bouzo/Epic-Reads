@@ -37,7 +37,7 @@ export const StepTwo = ({
         {cart.map((book, index) => (
           <li key={index}>
             <CheckIcon sx={{ color: "#d4a373" }} /> {book.title} by{" "}
-            {book.author}, <span>Due: {returnDate}</span>
+            {book.author}, <span>Due: {book.returnDate}</span>
           </li>
         ))}
       </ul>
