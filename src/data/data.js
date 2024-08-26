@@ -19,8 +19,7 @@ export const navElements = [
 
 export const books = [
   {
-    image:
-      "https://github.com/Sibel-Bouzo/Epic-Reads/blob/main/public/images/Little-Fires-Everywhere.jpg",
+    image: "images/Little-Fires-Everywhere.jpg",
     title: "Little Fires Everywhere",
     author: "Celeste Ng",
     description:
